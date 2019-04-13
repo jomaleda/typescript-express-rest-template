@@ -1,0 +1,10 @@
+---
+applications:
+- name: [app_name]
+  memory: 256M
+  instances: 1
+  health-check-type: process
+  routes:
+  - route: [app_name]-test.w3ibm.mybluemix.net
+  env:
+    ENVIROMENT: test
